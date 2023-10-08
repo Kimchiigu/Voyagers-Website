@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat; 
     cursor: none;
     max-width: max-content;
+    overflow-x: hidden;
 }
 
 /* Custom Cursor */
