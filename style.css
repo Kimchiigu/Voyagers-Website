@@ -17,7 +17,6 @@ body {
     cursor: none;
     max-width: max-content;
     overflow-x:hidden;
-
 }
 
 article {
@@ -128,11 +127,14 @@ li:hover{
 }
 
 .container1-hero-section{
-    width: 100%;
-    height: 80vh; 
+    margin-left:1%;
+    margin-right: 10%;
+    width: 98%;
+    height: 20%; 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     box-sizing: border-box;
 }
 
@@ -143,6 +145,7 @@ li:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 50%;
 }
 
 .custom-button{
@@ -165,6 +168,94 @@ li:hover{
     color: aliceblue;
 }
 
+/* Aside for Carousel */
+.aside-hero-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.hero-carousel-container{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.hero-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.hero-carousel{
+    padding: 0 5% 0 5%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex-direction: row;
+    border-radius: 30px;
+    width: 100%;
+    
+}
+
+.carousel-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    width: 300px;
+    height: 450px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.carousel-image:hover{
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    transform: scale(1.1);
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.pre-btn1,
+.nxt-btn1 {
+    border: none;
+    width: 10px;
+    height: 105%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: none;
+    z-index: 8;
+    margin: 0 3% 0 3%;
+}
+
+.pre-btn1 {
+    left: 0;
+}
+  
+.nxt-btn1 {
+    right: 0;
+}
+  
+.pre-btn1 img,
+.nxt-btn1 img {
+    opacity: 0.2;
+    width: 10vh;
+}
+  
+.pre-btn1:hover img,
+.nxt-btn1:hover img {
+    opacity: 1;
+}
 
 /* About Us */
 .container2-about-us {
@@ -817,9 +908,10 @@ li:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         margin-left:1%;
         margin-right: 10%;
-        margin-top: 10%;
+        margin-top: 5%;
         width: 98%;
         height: 20%;
         box-sizing: border-box;
@@ -835,6 +927,24 @@ li:hover{
 
     .container1-text-description{
         font-size: 2.5vh;
+    }
+
+    /* Aside Hero Section */
+    .aside-hero-carousel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+    }
+    
+    .hero-carousel{
+        padding: 0 5% 10% 5%;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        flex-direction: row;
+        border-radius: 30px;
+        width: 100%;
     }
 
     /* About Us Section */
