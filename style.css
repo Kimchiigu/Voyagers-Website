@@ -20,6 +20,17 @@ body {
 
 }
 
+article {
+    width: 100%;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
 /* Custom Cursor */
 .cursor {
     position: absolute;
@@ -102,7 +113,6 @@ li:hover{
 .container1-text-title{
     font-size: 50px;
     text-align: center;
-
 }
 
 .description-paragraph{
@@ -175,7 +185,7 @@ li:hover{
 }
 
 .about-us-uvp{
-    width: 50%;
+    width: 100%;
 }
 
 .uvp-one,
@@ -472,18 +482,18 @@ li:hover{
 
 .pre-btn,
 .nxt-btn {
-  border: none;
-  width: 2vw;
-  height: 130%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  cursor: none;
-  z-index: 8;
-  margin: 0 3% 0 3%;
+    border: none;
+    width: 2vw;
+    height: 130%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: none;
+    z-index: 8;
+    margin: 0 3% 0 3%;
 }
 
 .pre-btn {
@@ -702,44 +712,6 @@ li:hover{
     font-size: 3vh;
 }
 
-/* Aside */
-#sidebar {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5px;
-    width: auto;
-    z-index: 1;
-}
-
-#timeline {
-    background: #414141;
-    border-radius: 50px;
-    padding: 10px;
-    position: relative;
-}
-
-.dot {
-    width: 20px;
-    height: 20px;
-    background: #ccc;
-    border-radius: 50%;
-    margin: 10px 0;
-    transition: background 0.3s;
-}
-
-.dot.active {
-    background: #00fffbe0;
-}
-
-.dot:hover {
-    background: #00fffbe0; /* Green color */
-}
-
-aside {
-    width: 20%;
-}
-
 /* Footer */
 .footer-container{
     width: 100%;
@@ -865,11 +837,11 @@ aside {
         font-size: 2.5vh;
     }
 
+    /* About Us Section */
     aside{
-        display: none;
+        width: 90%;
     }
 
-    /* About Us Section */
     .container2-about-us {
         width: 100%;
         display: flex;
@@ -888,7 +860,7 @@ aside {
     }
 
     .about-us-uvp{
-        width: 90%;
+        width: 100%;
     }
     
     .about-us-uvp{
@@ -1032,5 +1004,4 @@ aside {
     .mobile-menu {
         display: none;
     }
-    
 }
